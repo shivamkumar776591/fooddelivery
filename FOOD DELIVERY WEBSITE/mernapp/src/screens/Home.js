@@ -37,14 +37,14 @@ export default function Home() {
   <div className='carousel-caption' style={{zIndex:"10"}}>
   <div className="d-flex justify-content-center">
       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" value={search} onChange={(e)=>{setSearch(e.target.value)}}/>
-      {/* <button class="btn btn-outline-success" type="submit">Search</button> */}
+      <button class="btn btn-outline-success" type="submit">Search</button>
     </div>
   </div>
     <div className="carousel-item active">
-      <img src="https://source.unsplash.com/random/900x700/?shake" className="d-block w-100" style={{filter:"brightness(30%)"}} alt="..."/>
+      <img src="https://source.unsplash.com/random/900x700/?food" className="d-block w-100" style={{filter:"brightness(30%)"}} alt="..."/>
     </div>
     <div className="carousel-item">
-      <img src="https://source.unsplash.com/random/900x700/?pizza" className="d-block w-100" style={{filter:"brightness(30%)"}}alt="..."/>
+      <img src="https://unsplash.com/photos/pizza-with-berries-MQUqbmszGGM" className="d-block w-100" style={{filter:"brightness(30%)"}}alt="..."/>
     </div>
     <div className="carousel-item">
       <img src="https://source.unsplash.com/random/900x700/?burger" className="d-block w-100" style={{filter:"brightness(30%)"}}alt="..."/>
@@ -63,7 +63,7 @@ export default function Home() {
           
           
           {
-            foodCat.length !==[]
+            foodCat.length !==0
             ? foodCat.map((data)=>{
              
               
@@ -72,7 +72,7 @@ export default function Home() {
                 {data.CategoryName }
                 </div>
                 <hr />
-                {foodItems.length !==[]
+                {foodItems.length !==0
                 ?
                 foodItems.filter((item)=> (item.CategoryName === data.CategoryName) && (item.name.toLowerCase().includes(search.toLocaleLowerCase()) ))
                 

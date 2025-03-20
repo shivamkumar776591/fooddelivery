@@ -16,7 +16,7 @@ export default function Carousel() {
       <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" className="d-block w-100" style={{filter:"brightness(30%)"}} alt="..."/>
     </div>
     <div className="carousel-item">
-      <img src="https://source.unsplash.com/random/900x700/?sandwitch" className="d-block w-100" style={{filter:"brightness(30%)"}}alt="..."/>
+      <img src="https://source.unsplash.com/GET/photos/random/900x700/?sandwitch" className="d-block w-100" style={{filter:"brightness(30%)"}}alt="..."/>
     </div>
     <div className="carousel-item">
       <img src="https://source.unsplash.com/random/900x700/?burger" className="d-block w-100" style={{filter:"brightness(30%)"}}alt="..."/>
